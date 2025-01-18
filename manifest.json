@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Eclipse Auto Clicker",
+  "version": "1.0",
+  "description": "Auto clicker for the browser game Eclipse.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://tap.eclipse.xyz/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://tap.eclipse.xyz/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
